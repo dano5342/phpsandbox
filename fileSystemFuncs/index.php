@@ -64,7 +64,7 @@
     // Open a file for reading
     $handle = fopen($file, 'r');
     $data = fread($handle, filesize($file));
-    flcose($handle);
+    fclose($handle);
     echo $data; 
 
     // Open file for writing
